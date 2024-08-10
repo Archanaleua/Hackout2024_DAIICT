@@ -9,7 +9,7 @@ sar_image = cv2.imread('libcong.jpg', cv2.IMREAD_GRAYSCALE)
 sar_image_normalized = cv2.normalize(sar_image, None, 0, 255, cv2.NORM_MINMAX)
 
 # Apply a vibrant colormap (e.g., 'jet', 'plasma', 'inferno', 'viridis')
-colored_image = cv2.applyColorMap(sar_image_normalized, cv2.COLORMAP_PINK)
+colored_image = cv2.applyColorMap(sar_image_normalized, cv2.COLORMAP_JET)
 
 # Display the original and colorized image
 plt.figure(figsize=(10, 5))
